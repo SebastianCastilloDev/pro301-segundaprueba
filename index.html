@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <title>Segunda Prueba</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Prueba de Javascript</h1>
+        <div class="row">
+            <div class="col-12">
+                <h3>Ejercicio 1</h3>
+                <p>
+                    Cris Piña encargado de la bodega de la hojalatería familiar necesita generar
+                    diez valores (numéricos) con rango entre $ 5.000 y $ 5.500 con un input. y un boton para agregar
+                </p>
+                <div>
+                    • Necesita mostrar por pantalla o consola cual es el valor más alto ingresado.
+                </div>
+                <div>• Además, necesita saber si el valor más alto es par o impar.</div>
+
+                <p>Solución:</p>
+                <form>
+                    <div class="mb-3">
+                        <label for="valor" class="form-label">Valor</label>
+                        <input type="number" class="form-control" id="valor" name="valor" min="5000" max="5500">
+                    </div>
+
+                    <button type="button" class="btn btn-primary" id="btn-generar-numero">Generar numero</button>
+                    <button type="button" class="btn btn-primary" id="btn-agregar-numero">Agregar</button>
+                </form>
+
+                <!-- Cuadro de valores ingresados -->
+                <div class="mt-3">
+                    <h4>Valores ingresados</h4>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Valor</th>
+                                <th>Par/Impar</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+
+            </div>
+        </div>
+        <hr>
+        <hr>
+        
+        <!-- Ejercicio 2: -->
+        <div class="row">
+            <div class="col-12">
+                <h3>Ejercicio 2</h3>
+                <p>
+                    Mediante una función o funciones realiza una calculadora que realice las
+                    siguientes operaciones:
+                </p>
+
+                <div>
+                    • Primero debes ingresar tres números.
+                </div>
+                <div>
+                    • Se necesita que sume los tres números y se muestre por consola.
+                </div>
+                <div>
+                    • Se necesita que reste los tres números y se muestre por consola.
+                </div>
+                <div>
+                    • Se necesita que multiplique los tres números y se muestre por consola.
+                </div>
+
+                <form>
+                   <legend>Solucion Ejercicio 2</legend>
+                   <fieldset>
+                        <div class="mb-3">
+                            <label for="numero1" class="form-label">Número 1</label>
+                            <input type="number" class="form-control" id="numero1" name="numero1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="numero2" class="form-label">Número 2</label>
+                            <input type="number" class="form-control" id="numero2" name="numero2">
+                        </div>
+                        <div class="mb-3">
+                            <label for="numero3" class="form-label">Número 3</label>
+                            <input type="number" class="form-control" id="numero3" name="numero3">
+                        </div>
+                        <button type="button" class="btn btn-primary" id="btn-sumar">Sumar</button>
+                        <button type="button" class="btn btn-primary" id="btn-restar">Restar</button>
+                        <button type="button" class="btn btn-primary" id="btn-multiplicar">Multiplicar</button>
+                    </fieldset>
+
+                    // poner el resultado de la operacion en un div con id resultado-ejercicio2 con color de fondo success y texto grande centrado
+                    <div class="alert alert-success mt-3 text-center" id="resultado-ejercicio2"></div>
+
+
+
+                </form>
+            </div>
+        </div>
+        
+        <!-- Ejercicio 3: -->
+        <div class="row">
+            <div class="col-12">
+                <h3>Ejercicio 3</h3>
+                <p>En la universidad Ucet se necesita evaluar el desempeño de 6 estudiantes del doctorado y
+                    saber según sus 4 notas si aprobaron el curso o no.</p>
+                <div>
+                    • Crea una función en JavaScript que calcule el promedio de notas de estos 6 estudiantes
+                    (promedio mayor o igual a 4 aprobado, promedio menor que 4 reprobado)
+                </div>
+                <div>
+                    • Crea un array de apellidos de los estudiantes y una matriz con 4 notas
+                </div>
+                <div>
+                    • La función debe mostrar en consola el apellido de cada estudiante su nota promedio y su
+                    situación final si es aprobado o reprobado.
+                </div>
+                <div>
+                    • Puedes crear más de una función para diferentes tareas si quieres modular aún más tu
+                    aplicación.
+                </div>
+                <div>
+                    • Puedes usar métodos de array para manejar los datos y calcular el promedio de sus notas
+                </div>
+
+                <p>Solución:</p>
+
+                <!-- Crear un formulario que permita el ingreso de 4 notas para 6 estudiantes -->
+                <form>
+                    <legend>Notas de los estudiantes</legend>
+                    <fieldset>
+                        <div class="mb-3">
+                            <label for="apellido" class="form-label">Apellido</label>
+                            <input type="text" class="form-control" id="apellido" name="apellido">
+                        </div>
+                        <div class="mb-3">
+                            <label for="nota1" class="form-label">Nota 1</label>
+                            <input type="number" class="form-control" id="nota1" name="nota1" min="1" max="7">
+                        </div>
+                        <div class="mb-3">
+                            <label for="nota2" class="form-label">Nota 2</label>
+                            <input type="number" class="form-control" id="nota2" name="nota2" min="1" max="7">
+                        </div>
+                        <div class="mb-3">
+                            <label for="nota3" class="form-label">Nota 3</label>
+                            <input type="number" class="form-control" id="nota3" name="nota3" min="1" max="7">
+                        </div>
+                        <div class="mb-3">
+                            <label for="nota4" class="form-label">Nota 4</label>
+                            <input type="number" class="form-control" id="nota4" name="nota4" min="1" max="7">
+                        </div>
+                        <button type="button" class="btn btn-primary" id="btn-agregar-nota">Agregar</button>
+                    </fieldset>
+                </form>
+
+                <!-- Cuadro de valores ingresados -->
+                <div class="mt-3">
+                    <h4>Notas de los estudiantes</h4>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Apellido</th>
+                                <th>Nota 1</th>
+                                <th>Nota 2</th>
+                                <th>Nota 3</th>
+                                <th>Nota 4</th>
+                                <th>Promedio</th>
+                                <th>Situación</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tabla-notas">
+                        </tbody>
+                    </table>
+                </div>
+                
+
+            </div>
+        </div>
+
+
+
+
+    </div>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const btnGenerarNumero = document.getElementById('btn-generar-numero')
+            const btnAgregarNumero = document.getElementById('btn-agregar-numero')
+            const valoresIngresados = document.querySelector('tbody')
+            const valores = []
+
+            btnGenerarNumero.addEventListener('click', function() {
+                // generar un numero aleatorio entre 5000 y 5500
+                const valor = Math.floor(Math.random() * (5500 - 5000 + 1)) + 5000
+                document.getElementById('valor').value = valor
+
+            })
+
+            btnAgregarNumero.addEventListener('click', function() {
+                const valor = document.getElementById('valor').value
+
+                // validar que el valor sea un numero y que sea distinto de vacio
+                if (isNaN(valor) || valor === '') {
+                    alert('El valor ingresado no es un número')
+                    return
+                }
+
+
+                valores.push(valor)
+
+                // limpiar la tabla
+                valoresIngresados.innerHTML = ''
+
+                // recorrer los valores ingresados
+                valores.forEach(function(valor) {
+                    const fila = document.createElement('tr')
+                    const celdaValor = document.createElement('td')
+                    const celdaParImpar = document.createElement('td')
+
+                    celdaValor.textContent = valor
+                    celdaParImpar.textContent = valor % 2 === 0 ? 'Par' : 'Impar'
+
+                    fila.appendChild(celdaValor)
+                    fila.appendChild(celdaParImpar)
+
+                    valoresIngresados.appendChild(fila)
+                })
+
+                resaltarFila();
+                document.getElementById('valor').value = ''
+            })
+        })
+
+        // Resaltar la fila del valor mas alto
+        function resaltarFila() {
+            const filas = document.querySelectorAll('tbody tr')
+            let valorMaximo = 0
+            let filaMaximo = null
+
+            filas.forEach(function(fila) {
+                const valor = parseInt(fila.querySelector('td').textContent)
+                if (valor > valorMaximo) {
+                    valorMaximo = valor
+                    if (filaMaximo) {
+                        filaMaximo.classList.remove('table-danger')
+                    }
+                    filaMaximo = fila
+                }
+            })
+
+            if (filaMaximo) {
+                filaMaximo.classList.add('table-danger')
+            }
+        }
+        
+
+
+    </script>
+
+    <script>
+       // Solucion ejercicio 2
+         document.addEventListener('DOMContentLoaded', function() {
+                const btnSumar = document.getElementById('btn-sumar')
+                const btnRestar = document.getElementById('btn-restar')
+                const btnMultiplicar = document.getElementById('btn-multiplicar')
+                const resultadoEjercicio2 = document.getElementById('resultado-ejercicio2')
+    
+                btnSumar.addEventListener('click', function() {
+                 const numero1 = document.getElementById('numero1').value
+                 const numero2 = document.getElementById('numero2').value
+                 const numero3 = document.getElementById('numero3').value
+    
+                 const resultado = parseInt(numero1) + parseInt(numero2) + parseInt(numero3)
+                 resultadoEjercicio2.textContent = `La suma de los tres números es: ${resultado}`
+                })
+    
+                btnRestar.addEventListener('click', function() {
+                 const numero1 = document.getElementById('numero1').value
+                 const numero2 = document.getElementById('numero2').value
+                 const numero3 = document.getElementById('numero3').value
+    
+                 const resultado = parseInt(numero1) - parseInt(numero2) - parseInt(numero3)
+                 resultadoEjercicio2.textContent = `La resta de los tres números es: ${resultado}`
+                })
+    
+                btnMultiplicar.addEventListener('click', function() {
+                 const numero1 = document.getElementById('numero1').value
+                 const numero2 = document.getElementById('numero2').value
+                 const numero3 = document.getElementById('numero3').value
+    
+                 const resultado = parseInt(numero1) * parseInt(numero2) * parseInt(numero3)
+                 resultadoEjercicio2.textContent = `La multiplicación de los tres números es: ${resultado}`
+                })
+          })
+    
+    </script>
+
+    <script>
+      
+        // Solucion ejercicio 3
+
+        // Capturar los elementos del formulario
+
+        const btnAgregarNota = document.getElementById('btn-agregar-nota')
+        const notasIngresadas = document.getElementById('tabla-notas')
+        const estudiantes = []
+
+        btnAgregarNota.addEventListener('click', function() {
+            const apellido = document.getElementById('apellido').value
+            const nota1 = document.getElementById('nota1').value
+            const nota2 = document.getElementById('nota2').value
+            const nota3 = document.getElementById('nota3').value
+            const nota4 = document.getElementById('nota4').value
+
+            // validar que los campos no esten vacios
+            if (apellido === '' || nota1 === '' || nota2 === '' || nota3 === '' || nota4 === '') {
+                alert('Todos los campos son obligatorios')
+                return
+            }
+
+            // validar que las notas sean numeros
+            if (isNaN(nota1) || isNaN(nota2) || isNaN(nota3) || isNaN(nota4)) {
+                alert('Las notas deben ser números')
+                return
+            }
+
+            // validar que las notas esten entre 1 y 7
+            if (nota1 < 1 || nota1 > 7 || nota2 < 1 || nota2 > 7 || nota3 < 1 || nota3 > 7 || nota4 < 1 || nota4 > 7) {
+                alert('Las notas deben estar entre 1 y 7')
+                return
+            }
+
+            // calcular el promedio
+            const promedio = (parseInt(nota1) + parseInt(nota2) + parseInt(nota3) + parseInt(nota4)) / 4
+
+            // determinar si aprobo o reprobo
+            const situacion = promedio >= 4 ? 'Aprobado' : 'Reprobado'
+
+            // Rellenar la estructura 
+            // <tr>
+            //                     <td>Apellido</td>
+            //                     <td>Nota 1</td>
+            //                     <td>Nota 2</td>
+            //                     <td>Nota 3</td>
+            //                     <td>Nota 4</td>
+            //                     <td>Promedio</td>
+            //                     <td>Situación</td>
+            //                 </tr>
+            // dentro del tbody tabla-notas
+
+            const template = `
+                <tr>
+                    <td>${apellido}</td>
+                    <td>${nota1}</td>
+                    <td>${nota2}</td>
+                    <td>${nota3}</td>
+                    <td>${nota4}</td>
+                    <td>${promedio}</td>
+                    <td>${situacion}</td>
+                </tr>
+            `
+
+            notasIngresadas.innerHTML += template
+
+            // limpiar los campos
+            document.getElementById('apellido').value = ''
+            document.getElementById('nota1').value = ''
+            document.getElementById('nota2').value = ''
+            document.getElementById('nota3').value = ''
+            document.getElementById('nota4').value = ''
+
+
+            
+
+        })
+
+        
+                
+    </script>
+</body>
+</html>
